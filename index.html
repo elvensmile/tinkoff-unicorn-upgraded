@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Unicorn Runner!</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="startScreen" id="startScreen">
+            <h1 class="startScreen__title rainbow_effect">Unicorn Runner</h1>
+            <h2 class="startScreen__header">Выбери уровень для игры:</h2>
+            <div class="startScreen__levels" id="display-levels">
+
+            </div>
+
+        </div>
+       <div class="game" id="game">
+
+               <h2 class="fintech-header">
+                   Тинькофф<br>
+                   Финтех
+               </h2>
+               <div class="lives" id="lives"></div>
+               <div class="score-block">
+                   <p class="score-sign">score</p>
+
+                   <p class="score-num" id="unicorn-score">0</p>
+               </div>
+
+
+        <canvas id="screen" width="840" height="660"></canvas>
+
+    </div>
+     <div class="death-screen" id="death-screen">
+       <div class="death-screen__text"> <p>This is the end,<br>
+         My only friend,<br>
+         The end...<br></p>
+
+         Your result: <p id="final-score"></p><br>
+           <p onclick="location.reload()" class="death-screen__level rainbow_effect">Back to start</p> </div>
+
+
+     </div>
+     <div class="script" id="script">
+         <p id="begging">
+         </p>
+         <div class="script__buttons" id="buttons">
+         <button id ="button1" class="script__buttons_button --yes" onclick="finalCall(scriptText.sound.success)">Да</button>
+         <button id ="button2" class="script__buttons_button --no" onclick="finalCall(scriptText.sound.fail)" >Нет</button>
+         </div>
+     </div>
+
+
+    <script src="js/Timer.js"></script>
+    <script src="js/Math.js"></script>
+    <script src="js/Camera.js"></script>
+    <script src="js/ClipBox.js"></script>
+    <script src="js/Spritesheet.js"></script>
+    <script src="js/Compositor.js"></script>
+    <script src="js/EntityCollider.js"></script>
+    <script src="js/Entity.js"></script>
+    <script src="js/TileCreation.js"></script>
+    <script src="js/Level.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/loaders.js"></script>
+    <script src="js/layers.js"></script>
+    <script src="js/loadLevel.js"></script>
+    <script src="js/Traits.js"></script>
+    <script src="js/chars/Unicorn.js"></script>
+    <script src="js/chars/Rainbow.js"></script>
+    <script src="js/chars/EnemyBug.js"></script>
+    <script src="js/chars/EnemyEvilSnowman.js"></script>
+    <script src="js/chars/IceBomb.js"></script>
+    <script src="js/chars/Princess.js"></script>
+    <script src="js/PlayerController.js"></script>
+    <script src="js/Screens.js"></script>
+    <script src="js/Sound.js"></script>
+    <script src="js/scripttext.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
